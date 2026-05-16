@@ -5,7 +5,7 @@ export default function TeamChat() {
     <div className="h-[600px] flex bg-white rounded-[3rem] border border-slate-100 shadow-xl overflow-hidden animate-in zoom-in-95">
       {/* Sidebar - Contacts */}
       <div className="w-64 bg-slate-50 border-r border-slate-100 p-8">
-        <h3 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-8 italic text-center">Active Sync</h3>
+        <h3 className="text-[10px] font-black text-blue-900 uppercase tracking-widest mb-8 text-center">Active Sync</h3>
         <div className="space-y-4">
           {contacts.map((name, i) => (
             <div key={i} className="flex items-center gap-3 cursor-pointer group">

@@ -50,7 +50,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         lg:relative lg:translate-x-0
       `}>
         <div className="flex items-center justify-between mb-10 lg:justify-center">
-          <h2 className="text-2xl font-black text-[#1E40AF] tracking-tighter italic uppercase">Cubixmet_</h2>
+          <h2 className="text-2xl font-black text-[#1E40AF] tracking-tighter uppercase">Cubixmet_</h2>
           <button onClick={() => setIsSidebarOpen(false)} className="lg:hidden p-2 text-slate-400 hover:text-slate-600 transition-colors">
              ✕
           </button>
@@ -98,9 +98,9 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
                   • Project Registry
                 </button>
                 <button 
-                  onClick={() => router.push('/dashboard/todo')} 
+                  onClick={() => router.push('/dashboard/projects')} 
                   className={`w-full text-left p-3 rounded-xl font-bold text-[9px] lg:text-[10px] uppercase tracking-widest transition-all ${
-                    pathname === '/dashboard/todo' ? 'text-blue-700 bg-blue-100/50' : 'text-slate-400 hover:text-blue-500'
+                    pathname === '/dashboard/projects' ? 'text-blue-700 bg-blue-100/50' : 'text-slate-400 hover:text-blue-500'
                   }`}
                 >
                   • Activity Stream
@@ -135,7 +135,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
             >
               ☰
             </button>
-            <h1 className="text-lg lg:text-3xl font-black tracking-tighter italic uppercase text-slate-900 truncate max-w-[150px] sm:max-w-none">
+            <h1 className="text-lg lg:text-3xl font-black tracking-tighter uppercase text-blue-950 truncate max-w-[150px] sm:max-w-none">
               {pathname.includes('projects') ? 'Projects' : pathname.includes('todo') ? 'Activity' : navItems.find(i => i.path === pathname)?.id || "CUBIXMET"}
             </h1>
           </div>

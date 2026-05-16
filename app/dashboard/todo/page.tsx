@@ -42,7 +42,7 @@ export default function TodoManagement() {
       
       <div className="flex justify-between items-end">
         <div>
-          <h2 className="text-3xl font-black italic uppercase tracking-tighter text-slate-900">Sprint Backlog_</h2>
+          <h2 className="text-3xl font-black uppercase tracking-tighter text-blue-950">Sprint Backlog_</h2>
           <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] mt-2">Cubixmet Internal Operations</p>
         </div>
         <div className="text-right">
@@ -60,7 +60,7 @@ export default function TodoManagement() {
         
         <section className="lg:col-span-1">
           <form onSubmit={addTask} className="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm sticky top-10">
-            <h3 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-6 italic text-center">Create Ticket</h3>
+            <h3 className="text-[10px] font-black text-blue-900 uppercase tracking-widest mb-6 text-center">Create Ticket</h3>
             <div className="space-y-4">
               <input 
                 type="text" 
